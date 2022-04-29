@@ -1113,10 +1113,25 @@ type ZAxis3D struct {
 // Grid
 type Grid struct {
 	// Height
-	Height float32 `json:"height,omitempty"`
+	//Height float32 `json:"height,omitempty"`
 
 	// Bottom
-	Bottom float32 `json:"bottom,omitempty"`
+	//Bottom float32 `json:"bottom,omitempty"`
+	
+	// Distance between grid component and the left side of the container.
+	Left string `json:"left,omitempty"`
+
+	// Distance between grid component and the right side of the container.
+	Right string `json:"right,omitempty"`
+
+	// Distance between grid component and the top side of the container.
+	Top string `json:"top,omitempty"`
+	
+	// Height
+	Height float32 `json:"height,omitempty"`
+
+	// Distance between grid component and the bottom side of the container.
+	Bottom string `json:"bottom,omitempty"`
 }
 
 // Grid3D contains options for the 3D coordinate.
