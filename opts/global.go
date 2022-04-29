@@ -1118,6 +1118,12 @@ type Grid struct {
 	// Bottom
 	//Bottom float32 `json:"bottom,omitempty"`
 	
+	// Height
+	Height float32 `json:"height,omitempty"`
+
+	// Distance between grid component and the bottom side of the container.
+	Bottom string `json:"bottom,omitempty"`
+	
 	// Distance between grid component and the left side of the container.
 	Left string `json:"left,omitempty"`
 
@@ -1126,12 +1132,6 @@ type Grid struct {
 
 	// Distance between grid component and the top side of the container.
 	Top string `json:"top,omitempty"`
-	
-	// Height
-	Height float32 `json:"height,omitempty"`
-
-	// Distance between grid component and the bottom side of the container.
-	Bottom string `json:"bottom,omitempty"`
 }
 
 // Grid3D contains options for the 3D coordinate.
